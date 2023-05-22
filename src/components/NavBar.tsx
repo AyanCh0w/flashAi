@@ -30,7 +30,6 @@ export default function NavBar(){
                 <CustomLink href="/">Home</CustomLink>
                 <CustomLink href="/about">About</CustomLink>
                 {loggedIn ? <CustomLink href="/card">Cards</CustomLink> : <CustomLink href="/login">Login</CustomLink>}
-                {loggedIn ? <div><p>Hello {auth.currentUser?.email}</p></div> : ""}
                 {loggedIn ? <button onClick={()=>{signOut(auth)}}>Sign Out</button> : ""}
             </ul>
         </div>

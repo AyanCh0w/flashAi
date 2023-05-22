@@ -1,27 +1,8 @@
 *{
-    background-color: #111;
-    color: aliceblue;
     text-decoration: none;
     list-style: none;
     justify-content: center;
     align-items: center;
     outline: none;
-}
-.glow {
-    transition: 0.3s;
-    padding: 20px 100px;
-    background-color: #222;
-    position: fixed;
-    left: 50%;
-    border: none;
-    cursor: pointer;
-    border-radius: 30px;
-}
-.glow:hover {
-    box-shadow: 0px 0px 12px #ffb3c4, 0px 0px 20px #582eff, 0px 0px 18px #04a3ff;
-    outline: #ffffff;
-}
-.glow:active {
-    box-shadow: 0px 0px 1px #ffb3c4, 0px 0px 2px #582eff, 0px 0px 3px #04a3ff;
-    border-width: 2px;
+    padding: none;
 }

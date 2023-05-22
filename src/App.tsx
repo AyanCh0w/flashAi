@@ -3,7 +3,7 @@ import NavBar from './components/NavBar';
 
 import CardPage from './Pages/CardPage';
 import HomePage from './Pages/HomePage';
-import LoginPage from './Pages/LoginPage';
+import CredsPage from './Pages/CredsPage';
 import AboutPage from './Pages/AboutPage';
 
 
@@ -20,7 +20,7 @@ export default function App(){
       Component = <CardPage/>
       break
     case ("/login"):
-      Component = <LoginPage/>
+      Component = <CredsPage/>
       break
   }
   return (

@@ -4,41 +4,35 @@ import { auth } from "../firebase";
 
 export default function FlashCardContainer(){
     const [query, setQuery] = useState("");
-
     const [loggedIn, setLoggedIn] = useState(true);
-    useEffect(auth.onAuthStateChanged((user)=>{
-        if (user) {
-            setLoggedIn(true);
-        } else {
-            setLoggedIn(false);
-        }
-    }))
+    const [car, setCar] = useState(JSON.parse('[{"question":"Whats 9 + 10", "answer":"idk", "hint":"bruh"}, {"question":"Whats 9 +s 10", "answer":"isdk", "hint":"brsuh"}]'));
 
-    const jsonData = [
-        {
-            question:"whats 9 plus 10",
-            answer:"21",
-            hint:"dumbo"
-        },
-        {
-            question:"whats19 plus 10213",
-            answer:"2421",
-            hint:"dum1`331bo"
-        }
-    ]
+    useEffect(() => {
+        auth.onAuthStateChanged((user)=>{
+            if (user) {
+                setLoggedIn(true);
+            } else {
+                setLoggedIn(false);
+            }
+        });
+    }, []);
+
+    async function data(){
+        let newCar = JSON.parse('[{"question":"Whats axad9ss + 10", "answer":"idk", "hint":"bruh"}, {"question":"Whats 9 +s 10", "answer":"issdk", "hint":"brsuh"}]');
+        setCar(newCar);
+    }
 
     if (loggedIn){
         return (
             <div>
                 <div>
                     <textarea/>
-                    <button onClick={()=>{console.log(query)}}>Generate</button>
+                    <button onClick={data}>Generate</button>
                 </div>
                 <div>
-                    <ul>{jsonData.map((card) => <li key={card.hint}><Flashcard question={card.question} answer={card.answer} hint={card.hint}/></li>)}</ul>
+                    <ul>{car.map((card:any) => <li key={card.hint}><Flashcard question={card.question} answer={card.answer} hint={card.hint}/></li>)}</ul>
                 </div>
             </div>
-            
         )
     } else (
         window.location.pathname = "/login"

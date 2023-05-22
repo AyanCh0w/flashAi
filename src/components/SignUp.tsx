@@ -15,8 +15,11 @@ export default function SignUp(){
     }
     return (
         <div>
+            <h3>Sign Up</h3>
             <input placeholder="Username" type="Username" onChange={(e)=>{setEmail(e.target.value)}}/>
+            <br />
             <input placeholder="Password" type="Password" onChange={(e)=>{setPassword(e.target.value)}}/>
+            <br />
             <button onClick={signIn}>Create</button>
         </div>
     )

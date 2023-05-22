@@ -16,8 +16,11 @@ export default function LogIn(){
 
     return (
         <div>
+            <h3>Log in</h3>
             <input placeholder="Username" type="Username" onChange={(e)=>{setEmail(e.target.value)}}/>
+            <br />
             <input placeholder="Password" type="Password" onChange={(e)=>{setPassword(e.target.value)}}/>
+            <br />
             <button onClick={logIn}>LogIn</button>
         </div>
     )

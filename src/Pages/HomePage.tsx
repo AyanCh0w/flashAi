@@ -1,7 +1,7 @@
 export default function HomePage(){
     return(
         <div>
-            <button className="glow">ooooh</button>
+            <p>h</p>
         </div>
     )
 }
