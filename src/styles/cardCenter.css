@@ -1,0 +1,22 @@
+button{
+    cursor: pointer;
+}
+button:hover{
+    text-decoration: underline;
+}
+.cardPage {
+    display: flex;
+    align-items: center;
+}
+.cardInput, .cardSelector{
+    display: flex;
+}
+.cards{
+    display: block;
+}
+.cardQuery {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-radius: 0px;
+    border-color: black
+}

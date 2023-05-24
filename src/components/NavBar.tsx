@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase"
+import "../styles/navBar.css"
 
 export default function NavBar(){
     const [loggedIn, setLoggedIn] = useState(false);
@@ -26,11 +27,13 @@ export default function NavBar(){
 
     return(
         <div>
-            <ul>
+            <ul className="navbar">
+                <li className="Logo">FlashAI</li>
+                <li><i className="gg-ratio"></i></li>
                 <CustomLink href="/">Home</CustomLink>
                 <CustomLink href="/about">About</CustomLink>
                 {loggedIn ? <CustomLink href="/card">Cards</CustomLink> : <CustomLink href="/login">Login</CustomLink>}
-                {loggedIn ? <button onClick={()=>{signOut(auth)}}>Sign Out</button> : ""}
+                <li>{loggedIn ? <button className="signOut" onClick={()=>{signOut(auth)}}>Sign Out</button> : ""}</li>
             </ul>
         </div>
     )

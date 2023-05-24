@@ -8,9 +8,10 @@ import AboutPage from './Pages/AboutPage';
 
 
 export default function App(){
+  
   let Component;
   switch (window.location.pathname) {
-    case ("/"):
+    case ("/" || "/flashai"):
       Component = <HomePage/>
       break
     case ("/about"):

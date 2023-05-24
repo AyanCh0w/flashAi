@@ -1,7 +1,9 @@
+import "../styles/flashCard.css"
+
 export default function Flashcard({question, answer, hint}:any){
   return (
     <div className="cardContainer">
-        <div className="card">
+        <div className="flashcard">
           <div className="question">
             <h4>Question: {question}</h4>
           </div>

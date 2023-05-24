@@ -1,0 +1,8 @@
+.cardContainer{
+    background-color: beige;
+    display: flex;
+    padding: 10px;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+}

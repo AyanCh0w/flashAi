@@ -1,8 +1,8 @@
-import FlashCardContainer from "../components/FlashCardContainer";
+import FlashCardContainer from "../components/CardCenter";
 
 export default function CardPage(){
     return (
-        <div>
+        <div className="cardPage">
             <FlashCardContainer/>
         </div>
     );
