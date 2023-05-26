@@ -15,7 +15,7 @@ input, button{
     border-color: transparent;
 }
 button:active{
-    transform: translateY(1px);
+    transform: translateY(2px);
 }
 .circle {
     font-family: 'Flow Circular', cursive;

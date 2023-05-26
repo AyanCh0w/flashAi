@@ -1,19 +1,26 @@
 .navbar{
     display: flex;
-    
+    margin: auto;
+    width: 80%;
 }
-.navbar a, li{
+.navbar a, li, button, .Logo p{
     color: black;
-    padding: 0.5vw;
     font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.navbar a:hover{
+.navbar a:hover, .signOut:hover{
     text-decoration: underline;
-}
-.signOut:hover{
-    text-decoration: underline;
-    
 }
 .active a{
     text-decoration: underline #F44336;
+}
+.Logo{
+    padding-left: 10%;
+}
+a{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #F44336;
 }

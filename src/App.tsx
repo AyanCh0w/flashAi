@@ -4,7 +4,6 @@ import NavBar from './components/NavBar';
 import CardPage from './Pages/CardPage';
 import HomePage from './Pages/HomePage';
 import CredsPage from './Pages/CredsPage';
-import AboutPage from './Pages/AboutPage';
 
 
 export default function App(){
@@ -13,9 +12,6 @@ export default function App(){
   switch (window.location.pathname) {
     case ("/" || "/flashai"):
       Component = <HomePage/>
-      break
-    case ("/about"):
-      Component = <AboutPage/>
       break
     case ("/card"):
       Component = <CardPage/>

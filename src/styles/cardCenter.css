@@ -10,6 +10,7 @@ button:hover{
 }
 .cardInput, .cardSelector{
     display: flex;
+    --ggs: 1.5;
 }
 .cards{
     display: block;
@@ -19,4 +20,15 @@ button:hover{
     border-width: 0 0 2px;
     border-radius: 0px;
     border-color: black
+}
+.gg-loadbar-alt{
+    color: #F44336;
+    display: flex;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    --ggs: 8;
+}
+.generateButton{
+    font-size: 20px;
 }
