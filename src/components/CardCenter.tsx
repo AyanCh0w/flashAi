@@ -6,12 +6,6 @@ import { Configuration, OpenAIApi } from "openai";
 
 
 export default function FlashCardContainer(){
-    const configuration = new Configuration({
-        apiKey: "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",
-      });
-    delete configuration.baseOptions.headers['User-Agent'];
-    const openai = new OpenAIApi(configuration);
-
     const [loggedIn, setLoggedIn] = useState(true);
     const [cardSetData, setCardSetData] = useState(JSON.parse('[{"question":"Why is there only one card?", "answer":"Because you havent generated them", "hint":"Click generate"}]'));
     const [input, setInput] = useState("");
