@@ -28,11 +28,11 @@ export default function NavBar(){
     return(
         <div>
             <ul className="navbar">
-                <li className="Logo">FlashAI</li>
+                <li className="Logo"><p>FlashAI</p></li>
                 <li><i className="gg-ratio"></i></li>
                 <CustomLink href="/">Home</CustomLink>
                 <CustomLink href="/about">About</CustomLink>
-                {loggedIn ? <CustomLink href="/card">Cards</CustomLink> : <CustomLink href="/login">Login</CustomLink>}
+                {loggedIn ? <CustomLink href="/card">Flashcards</CustomLink> : <CustomLink href="/login">Login</CustomLink>}
                 <li>{loggedIn ? <button className="signOut" onClick={()=>{signOut(auth)}}>Sign Out</button> : ""}</li>
             </ul>
         </div>

@@ -4,9 +4,7 @@
     align-self: center;
 }
 .form{
-    font-size: 1vw;
-    height: 40%;
-    width: 20%;
+    width:min-content;
     background-color: rgb(255, 255, 255);
     position: absolute;
     transform: translate(-50%,-50%);
@@ -17,17 +15,21 @@
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 .form input{
     border-bottom: 1px solid black;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 .form button{
-    font-size: 1vw;
+    font-size: 20px;
 }
 .credSubmit:hover, .logOrSign:hover, .signInWithGoogle:hover, .anonSignIn:hover{
     text-decoration: underline;
 }
 .logOrSign, .credSubmit, .signInWithGoogle, .anonSignIn{
     cursor: pointer;
+}
+h4{
+    font-size: 2vh;
 }

@@ -10,10 +10,10 @@ export default function Flashcard({question, answer, hint}:any){
           <div className="answer">
             <h4>Answer: {answer}</h4>
           </div>
-          <div className="hint">
-            <h4>Hint: {hint}</h4>
-          </div>
         </div>
     </div>
   )
 }
+//<div className="hint">
+//  <h4>Hint: {hint}</h4>
+//</div>

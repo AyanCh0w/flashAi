@@ -6,10 +6,8 @@
     outline: none;
     padding: none;
     font-family: 'Quicksand', sans-serif;
+    background-color: #FFFFFF;
 }
-/*
-font-family: 'Flow Circular', cursive;
-*/
 input, button{
     border-radius: 0.4rem;
     font-size: 1.2rem;
@@ -18,4 +16,10 @@ input, button{
 }
 button:active{
     transform: translateY(1px);
+}
+.circle {
+    font-family: 'Flow Circular', cursive;
+}
+.gg-ratio{
+    color: #F44336;
 }

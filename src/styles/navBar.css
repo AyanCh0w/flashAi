@@ -1,24 +1,19 @@
 .navbar{
     display: flex;
-    justify-content: center;
+    
 }
 .navbar a, li{
     color: black;
-    font-size: 1.2rem;
-    padding: 1rem;
+    padding: 0.5vw;
+    font-size: 25px;
 }
 .navbar a:hover{
-    transition: 2s;
     text-decoration: underline;
 }
 .signOut:hover{
     text-decoration: underline;
     
 }
-.Logo li{
-    font-size: 1.3rem;
-    text-decoration: b;
-}
 .active a{
-    text-decoration: underline grey;
+    text-decoration: underline #F44336;
 }
